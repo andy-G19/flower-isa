@@ -47,15 +47,21 @@ body {
   font-weight: bold;
   letter-spacing: 10px;
   opacity: 0;
-  animation: fadeIn 3s ease-in-out forwards;
+  animation: fadeIn 13s ease-in-out forwards;
   text-align: center;
 }
 @keyframes fadeIn {
-  from {
-    opacity: 0;
+  0% {
+    opacity: 0; /* Comienza invisible */
   }
-  to {
-    opacity: 1;
+  23% {
+    opacity: 1; /* Se hace completamente visible en el 23% del tiempo total, es decir, alrededor de 3 segundos */
+  }
+  77% {
+    opacity: 1; /* Se mantiene visible hasta el 77% del tiempo total, es decir, unos 10 segundos más */
+  }
+  100% {
+    opacity: 0; /* Se vuelve invisible al final del tiempo total, es decir, después de 13 segundos */
   }
 }
 
