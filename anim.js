@@ -4,7 +4,7 @@ var lyrics = document.querySelector("#lyrics");
 
 // Array de objetos que contiene cada línea y su tiempo de aparición en segundos
 var lyricsData = [
-  { text: "Amo lo que veo y lo que ocultas", time: 13 },
+  { text: "💖Amo lo que veo y lo que ocultas💖", time: 13 },
   { text: "Amo lo que muestras o insinuas", time: 17 },
   { text: "Amo lo que eres o imagino", time: 21 },
   { text: "Te amo en lo ajeno y lo que es mío", time: 24 },
@@ -26,7 +26,7 @@ var lyricsData = [
   { text: "Porque para amarte yo he nacido", time: 91 },
   { text: "Amo lo que seas y lo que puedas", time: 98 },
   { text: "Amo lo que afirmas, lo que niegas", time: 102 },
-  { text: "Amo lo que dices, lo que piensas,", time: 106 },
+  { text: "Amo lo que dices, lo que piensas", time: 106 },
   { text: "Te amo en lo que mides y lo que pesas", time: 110 },
   { text: "Amo lo que atrapas, lo que dejas", time: 114 },
   { text: "Amo tu alegría y tus tristezas", time: 118 },
@@ -44,6 +44,7 @@ var lyricsData = [
   { text: "Te amo por amor a dar lo mío", time: 170 },
   { text: "Te amo con orgullo de quererte", time: 173 },
   { text: "Porque para amarte yo he nacido", time: 179 },
+  { text: "💖 Te amo como no te lo imaginas Isabel 💖", time: 185},
 ];
 
 // Animar las letras

@@ -41,30 +41,36 @@ body {
 }
 .titulo {
   margin-bottom: 180px;
-  font-family: "Arial Narrow", Arial, sans-serif;
-  color: yellow;
+  font-family: "Georgia", "Times New Roman", serif;  /* Cambiado para un look más elegante */
+  color: rgba(189, 239, 9, 0.849);
   position: absolute;
   font-weight: bold;
-  letter-spacing: 10px;
+  letter-spacing: 2px;  /* Reducido para un look más sofisticado */
   opacity: 0;
-  animation: fadeIn 13s ease-in-out forwards;
+  animation: fadeIn 15s ease-in-out forwards;
   text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra negra con algo de transparencia */
+  font-size: 24px;  /* Tamaño de fuente añadido para mejorar la visibilidad */
+  text-transform: uppercase;  /* Transforma el texto a mayúsculas para más impacto */
 }
+
 @keyframes fadeIn {
   0% {
     opacity: 0; /* Comienza invisible */
   }
   23% {
-    opacity: 1; /* Se hace completamente visible en el 23% del tiempo total, es decir, alrededor de 3 segundos */
+    opacity: 1; /* Se hace completamente visible en el 23% del tiempo total */
   }
   77% {
-    opacity: 1; /* Se mantiene visible hasta el 77% del tiempo total, es decir, unos 10 segundos más */
+    opacity: 1; /* Se mantiene visible hasta el 77% del tiempo total */
   }
   100% {
-    opacity: 0; /* Se vuelve invisible al final del tiempo total, es decir, después de 13 segundos */
+    opacity: 0; /* Se vuelve invisible al final del tiempo total */
   }
 }
 
+
+/* TEMATICA NIGHT */ 
 .night {
   z-index: -1;
   position: absolute;
@@ -74,41 +80,46 @@ body {
   width: 100%;
   height: 100%;
   filter: blur(0.1vmin);
-  background-image: radial-gradient(
+  background-image: 
+    radial-gradient(
       ellipse at top,
       transparent 0%,
-      var(--dark-color)
+      rgba(0, 12, 30, 0.8) 80%, /* Suavizar la transición */
+      rgba(0, 0, 20, 0.9) 100% /* Agregar profundidad al color en la parte superior */
     ),
     radial-gradient(
       ellipse at bottom,
-      var(--dark-color),
-      rgba(145, 233, 255, 0.2)
+      rgba(0, 12, 30, 0.8) 20%,
+      rgba(145, 233, 255, 0.2) 80%, /* Suavizar la transición */
+      transparent 100%
     ),
     repeating-linear-gradient(
       220deg,
-      rgb(0, 0, 0) 0px,
-      rgb(0, 0, 0) 19px,
-      transparent 19px,
-      transparent 22px
+      rgba(0, 0, 0, 0.9) 0px,
+      rgba(0, 0, 0, 0.9) 15px, /* Reducir el tamaño de las bandas para un efecto más fino */
+      transparent 15px,
+      transparent 20px
     ),
     repeating-linear-gradient(
       189deg,
-      rgb(0, 0, 0) 0px,
-      rgb(0, 0, 0) 19px,
-      transparent 19px,
-      transparent 22px
+      rgba(0, 0, 0, 0.9) 0px,
+      rgba(0, 0, 0, 0.9) 15px,
+      transparent 15px,
+      transparent 20px
     ),
     repeating-linear-gradient(
       148deg,
-      rgb(0, 0, 0) 0px,
-      rgb(0, 0, 0) 19px,
-      transparent 19px,
-      transparent 22px
+      rgba(0, 0, 0, 0.9) 0px,
+      rgba(0, 0, 0, 0.9) 15px,
+      transparent 15px,
+      transparent 20px
     ),
-    linear-gradient(90deg, rgb(0, 255, 250), rgb(240, 240, 240));
+    linear-gradient(
+      90deg, 
+      rgba(0, 255, 250, 0.5), /* Añadir transparencia para un efecto de brillo sutil */
+      rgba(240, 240, 240, 0.5)
+    );
 }
-
-
 /* de aquii *******/
 .flowers {
   position: relative;
