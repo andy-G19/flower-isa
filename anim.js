@@ -10,7 +10,7 @@ var lyricsData = [
   { text: "Te amo en lo ajeno y lo que es mío", time: 24 },
   { text: "Amo lo que entregas, lo que escondes", time: 29 },
   { text: "Amo tus preguntas, tus respuestas", time: 33 },
-  { text: "Yo amo tus dudas why certezas", time: 37 },
+  { text: "Yo amo tus dudas y certezas", time: 37 },
   { text: "Te amo en lo simple y lo compleja", time: 40 },
   { text: "Amo lo que dices, lo que callas", time: 46 },
   { text: "Amo tus recuerdos, tus olvidos", time: 51 },
